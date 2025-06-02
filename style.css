@@ -1,0 +1,144 @@
+html, * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#main {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fdfbfb, #ebedee); /* Subtle gray gradient */
+    overflow: hidden;
+}
+
+.main__heading {
+    background: linear-gradient(135deg, #3b5ad6, #e97878, #fdbb2d); /* Blue to reddish-orange gradient */
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    font-family: ubuntu;
+    font-weight: bolder;
+    font-size: 30px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 20px 0px;
+    color: white;
+}
+
+.heading__text {
+    font-family: serif;
+    color: #ffd700; /* Gold text */
+    font-weight: bolder;
+    font-size: 34px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.section {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #3b5ad6, #e97878, #fdbb2d); /* Blue to reddish-orange gradient */
+}
+
+.info__box:hover {
+    transform: translateY(-10px);
+    transition: 100ms linear;
+}
+
+.popup__heading {
+    font-family: ubuntu;
+    font-weight: bold;
+    font-size: 23px;
+    color: #ff6f61; /* Coral red */
+}
+
+.popup__sub__heading {
+    text-align: left;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: white;
+}
+
+.popup__sub__heading > b {
+    color: #00c9a7; /* Teal for emphasis */
+    font-weight: bolder;
+    font-size: 23px;
+}
+
+.card-body {
+    display: flex;
+    justify-content: flex-start;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #fdfbfb, #ebedee); /* Subtle gray gradient */
+    flex-wrap: wrap;
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+}
+
+.card {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    transform: scale(.9);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: 100ms linear;
+    background:white; /* Soft purple gradient */
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: scale(.9) translateY(-5px);
+    transition: 100ms linear;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-img-top-parent {
+    overflow: hidden;
+    transition: 200ms linear;
+    height: 300px;
+    position: relative;
+}
+.card-img-top-parent img{
+  
+    height: 98%;
+  
+}
+
+.card-img-top:hover {
+    transition: 200ms linear;
+    transform: scale(1.1);
+}
+
+.card__heading {
+    padding: 10px;
+    background: linear-gradient(135deg, #ff4500, #ff6347); /* Red-orange gradient */
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: ubuntu;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 10px 10px 0 0;
+}
+/* Style for the topic button */
+.topic-button {
+    width: 100%; /* Full width of the card */
+    background: linear-gradient(135deg, #4e54c8, #8f94fb); /* Blue-purple gradient */
+    color: white; /* White text for contrast */
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    padding: 10px 0; /* Vertical padding for better click area */
+    text-align: center;
+    border-radius: 0 0 10px 10px; /* Rounded corners at the bottom */
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect for the button */
+.topic-button:hover {
+    transform: scale(1.05); /* Slightly enlarge the button */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add a shadow */
+    background: linear-gradient(135deg, #8f94fb, #4e54c8); /* Reverse gradient on hover */
+}
